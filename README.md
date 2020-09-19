@@ -1,5 +1,5 @@
 # desktopPrototyping
-1. Download the desktop app from this folder (add GoogleDrive link).
+1. Download the desktop app from this link : https://drive.google.com/drive/folders/1YMWRtPGihh5jimkfSkaXN-6qRpmxEB6i?usp=sharing
 This app allows you to connect the BLE gamepads to your computer and stream the gamepads sensors datas in OSC.
 For PC’s you need a BLE dongle (ref : https://www.amazon.fr/gp/product/B00CM83SC0/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 2. Unzip the package and launch the app
