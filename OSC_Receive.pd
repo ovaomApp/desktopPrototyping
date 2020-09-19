@@ -1,0 +1,166 @@
+#N canvas 451 32 1104 809 10;
+#X obj 36 69 oscparse;
+#X text 33 16 RECEIVE OSC;
+#X obj 36 46 netreceive -u -b 8000;
+#X obj 36 118 route corail bolstick;
+#X obj 36 91 list trim;
+#X obj 36 146 s corailDatas;
+#X obj 145 146 s bolsticklDatas;
+#X text 33 246 DISPLAY OSC DATAS;
+#X text 579 778 joystick x;
+#X obj 18 268 cnv 15 480 30 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X text 72 760 FSR1;
+#X text 119 760 FSR2;
+#X text 171 760 FSR3;
+#X obj 18 377 cnv 15 480 30 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X obj 18 444 cnv 15 480 50 empty empty empty 20 12 0 14 -262130 -66577
+0;
+#X obj 33 416 unpack f f f;
+#X floatatom 33 452 5 0 0 0 - - -, f 5;
+#X text 46 473 X;
+#X floatatom 73 452 5 0 0 0 - - -, f 5;
+#X floatatom 114 452 5 0 0 0 - - -, f 5;
+#X text 85 474 Y;
+#X text 128 473 Z;
+#X text 45 383 Accelero;
+#X obj 33 328 route accelerometer gyroscope magnetometer ui;
+#X obj 226 602 tgl 15 0 empty empty empty 17 7 0 10 -262130 -1 -1 0
+1;
+#X obj 183 416 unpack f f f;
+#X floatatom 183 452 5 0 0 0 - - -, f 5;
+#X text 196 473 X;
+#X floatatom 223 452 5 0 0 0 - - -, f 5;
+#X floatatom 264 452 5 0 0 0 - - -, f 5;
+#X text 235 474 Y;
+#X text 278 473 Z;
+#X text 195 383 Gyro;
+#X obj 333 416 unpack f f f;
+#X floatatom 333 452 5 0 0 0 - - -, f 5;
+#X text 346 473 X;
+#X floatatom 373 452 5 0 0 0 - - -, f 5;
+#X floatatom 414 452 5 0 0 0 - - -, f 5;
+#X text 385 474 Y;
+#X text 428 473 Z;
+#X text 345 383 Magneto;
+#X floatatom 76 602 5 0 0 0 - - -, f 5;
+#X floatatom 116 602 5 0 0 0 - - -, f 5;
+#X floatatom 157 602 5 0 0 0 - - -, f 5;
+#X obj 76 566 unpack f f f f;
+#X obj 76 649 vsl 15 100 0 1000 0 0 empty empty empty 0 -9 0 10 -262130
+-1 -1 0 1;
+#X obj 126 649 vsl 15 100 0 1000 0 0 empty empty empty 0 -9 0 10 -262130
+-1 -1 0 1;
+#X obj 176 649 vsl 15 100 0 1000 0 0 empty empty empty 0 -9 0 10 -262130
+-1 -1 0 1;
+#X obj 33 305 r corailDatas;
+#X obj 267 352 s corailUI;
+#X obj 76 541 r corailUI;
+#X text 73 517 ui;
+#X text 34 278 CORAIL;
+#X obj 528 268 cnv 15 480 30 empty empty empty 20 12 0 14 -261234 -66577
+0;
+#X obj 528 377 cnv 15 480 30 empty empty empty 20 12 0 14 -261234 -66577
+0;
+#X obj 528 444 cnv 15 480 50 empty empty empty 20 12 0 14 -261234 -66577
+0;
+#X obj 543 416 unpack f f f;
+#X floatatom 543 452 5 0 0 0 - - -, f 5;
+#X text 556 473 X;
+#X floatatom 583 452 5 0 0 0 - - -, f 5;
+#X floatatom 624 452 5 0 0 0 - - -, f 5;
+#X text 595 474 Y;
+#X text 638 473 Z;
+#X text 555 383 Accelero;
+#X obj 543 328 route accelerometer gyroscope magnetometer ui;
+#X obj 651 643 tgl 15 0 empty empty empty 17 7 0 10 -261234 -1 -1 0
+1;
+#X obj 693 416 unpack f f f;
+#X floatatom 693 452 5 0 0 0 - - -, f 5;
+#X text 706 473 X;
+#X floatatom 733 452 5 0 0 0 - - -, f 5;
+#X floatatom 774 452 5 0 0 0 - - -, f 5;
+#X text 745 474 Y;
+#X text 788 473 Z;
+#X text 705 383 Gyro;
+#X obj 843 416 unpack f f f;
+#X floatatom 843 452 5 0 0 0 - - -, f 5;
+#X text 856 473 X;
+#X floatatom 883 452 5 0 0 0 - - -, f 5;
+#X floatatom 924 452 5 0 0 0 - - -, f 5;
+#X text 895 474 Y;
+#X text 938 473 Z;
+#X text 855 383 Magneto;
+#X floatatom 586 602 5 0 0 0 - - -, f 5;
+#X floatatom 626 602 5 0 0 0 - - -, f 5;
+#X floatatom 667 602 5 0 0 0 - - -, f 5;
+#X obj 586 669 vsl 15 100 0 1000 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 4633 1;
+#X obj 616 646 vsl 15 100 0 1000 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 4534 1;
+#X obj 747 649 vsl 15 100 0 1000 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 0 1;
+#X text 583 517 ui;
+#X text 544 278 BOLSTICK;
+#X obj 543 305 r bolsticklDatas;
+#X obj 777 352 s bolstickUI;
+#X obj 586 541 r bolstickUI;
+#X obj 586 566 unpack f f f f f;
+#X obj 796 602 tgl 15 0 empty empty empty 17 7 0 10 -261234 -1 -1 0
+1;
+#X text 606 755 joystick y;
+#X text 739 758 blow sensor;
+#X text 650 664 Click joystick;
+#X text 225 623 Click ON/OFF button;
+#X text 795 623 Click ON/OFF button;
+#X connect 0 0 4 0;
+#X connect 2 0 0 0;
+#X connect 3 0 5 0;
+#X connect 3 1 6 0;
+#X connect 4 0 3 0;
+#X connect 15 0 16 0;
+#X connect 15 1 18 0;
+#X connect 15 2 19 0;
+#X connect 23 0 15 0;
+#X connect 23 1 25 0;
+#X connect 23 2 33 0;
+#X connect 23 3 49 0;
+#X connect 25 0 26 0;
+#X connect 25 1 28 0;
+#X connect 25 2 29 0;
+#X connect 33 0 34 0;
+#X connect 33 1 36 0;
+#X connect 33 2 37 0;
+#X connect 41 0 45 0;
+#X connect 42 0 46 0;
+#X connect 43 0 47 0;
+#X connect 44 0 41 0;
+#X connect 44 1 42 0;
+#X connect 44 2 43 0;
+#X connect 44 3 24 0;
+#X connect 48 0 23 0;
+#X connect 50 0 44 0;
+#X connect 56 0 57 0;
+#X connect 56 1 59 0;
+#X connect 56 2 60 0;
+#X connect 64 0 56 0;
+#X connect 64 1 66 0;
+#X connect 64 2 74 0;
+#X connect 64 3 91 0;
+#X connect 66 0 67 0;
+#X connect 66 1 69 0;
+#X connect 66 2 70 0;
+#X connect 74 0 75 0;
+#X connect 74 1 77 0;
+#X connect 74 2 78 0;
+#X connect 82 0 85 0;
+#X connect 83 0 86 0;
+#X connect 84 0 87 0;
+#X connect 90 0 64 0;
+#X connect 92 0 93 0;
+#X connect 93 0 82 0;
+#X connect 93 1 83 0;
+#X connect 93 2 84 0;
+#X connect 93 3 65 0;
+#X connect 93 4 94 0;
