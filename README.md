@@ -10,4 +10,4 @@ For PC’s you need a BLE dongle (ref : https://www.amazon.fr/gp/product/B00CM83
 
 Here you are!
 You can now receive OSC datas in the app of your choice! (Pure Data, Max MSP, Unity…).
-In the folder you’ll find a PD patch example to receive and display datas: "OSC_Receive.pd". Open it to visualize you sensors values.
+In the folders you'll find starter projects for Pure Data, Nodejs and Max MSP, which allow you to receive and display datas. Open them to visualize your sensors values.
