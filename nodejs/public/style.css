@@ -1,0 +1,43 @@
+body {
+  font-family: Consolas, monaco, monospace;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;  
+}
+
+#corail,
+#bolstick {
+  position: absolute;
+}
+
+#corail,
+#bolstick,
+#corail > div,
+#bolstick > div {
+  padding: 10px;
+}
+
+#corail {
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+  background: #fecf00;
+}
+
+#bolstick {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: #faccc7;
+}
